@@ -53,8 +53,9 @@ with sync_playwright() as p:
         download.save_as(final_path)
         
    
-
+    
     time.sleep(5)
+print('Arquivo baixado e salvo')
    
 #Parte de mandar para planilha
 
@@ -111,6 +112,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    print(f"Arquivo gerado para o sheets no dia {data.day}/{data.month}/{data.year} as {data.hour} h {data.minute} min {data.second} s.")
 
 
 

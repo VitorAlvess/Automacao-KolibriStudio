@@ -1,6 +1,7 @@
 ### Node ###
 # Logs
 config.json
+credentials.json
 *.json
 *.csv
 
@@ -146,3 +147,4 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+credentials
