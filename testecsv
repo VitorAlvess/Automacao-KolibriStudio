@@ -1,0 +1,10 @@
+import csv
+
+valores_adicionar = [
+
+]
+with open('dados.csv', mode='r', encoding="utf8") as ficheiro:
+    reader = csv.reader(ficheiro, delimiter=',')
+    for linha in reader:
+        valores_adicionar.append(linha)
+print(valores_adicionar)

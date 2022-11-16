@@ -4,6 +4,8 @@ config.json
 *.json
 
 teste.py
+testecsv.py
+
 
 logs
 *.log
