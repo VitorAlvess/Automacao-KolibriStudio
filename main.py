@@ -20,7 +20,7 @@ data = datetime.datetime.now()
 
 
 #Parte de baixar os dados (O certo é isso estar dentro de um Def)
-with open("config.json", encoding='utf-8') as meu_json: # Importar dados de um arquivo config com usernames e passwords
+with open("configuracao.json", encoding='utf-8') as meu_json: # Importar dados de um arquivo config com usernames e passwords
     dados = json.load(meu_json)
 
 UsernameKolibri = dados["kolibri"]["username"]
