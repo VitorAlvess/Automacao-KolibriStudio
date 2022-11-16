@@ -12,6 +12,11 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 import csv
+import datetime
+data = datetime.datetime.now()
+
+
+
 
 
 #Parte de baixar os dados (O certo é isso estar dentro de um Def)
@@ -91,10 +96,14 @@ def main():
             reader = csv.reader(ficheiro, delimiter=',')
             for linha in reader:
                 valores_adicionar.append(linha)
+        horario_atual = [
+        [f"Gerado no dia {data.day}/{data.month}/{data.year} as {data.hour} h {data.minute} min {data.second} s."]
+        ]
     
         result = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                     range=SAMPLE_RANGE_NAME, valueInputOption="RAW", body={'values': valores_adicionar}).execute()
-
+        result2 = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+                                    range='dados!M1', valueInputOption="RAW", body={'values': horario_atual}).execute()
         
     except HttpError as err:
         print(err)
