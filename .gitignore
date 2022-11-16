@@ -2,6 +2,7 @@
 # Logs
 config.json
 *.json
+*.csv
 
 teste.py
 testecsv.py
