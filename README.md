@@ -25,7 +25,6 @@ playwright install
 
 - é necessário instalar algumas dependências do Visual Studio para que o playwright rode, se precisar ele vai pedir no console.  necessita de instalar a ferramenta para programar em C++, deu um total de 1~GB para instalar
 
-![Untitled](https://imgur.com/a/PZT6qeC)
 
 - Criar um arquivo config.json e inserir dados referente a username e password do Kolibri
 
@@ -38,7 +37,7 @@ playwright install
 }
 ```
 
-- Instalar a biblioteca da API do Google Sheets
+- Instalar a biblioteca da API do [Google Sheets](console.cloud.google.com/apis/api/sheets.googleapis.com/)
 
 ```jsx
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
