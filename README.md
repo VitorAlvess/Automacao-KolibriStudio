@@ -27,7 +27,7 @@ playwright install
 
 
 
-- Criar um arquivo config.json e inserir dados referente a username e password do Kolibri
+- Criar um arquivo <b>config.json</b> e inserir dados referente a username e password do Kolibri
 
 ```jsx
 {
