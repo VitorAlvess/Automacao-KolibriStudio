@@ -20,8 +20,7 @@ with open("config.json", encoding='utf-8') as meu_json: # Importar dados de um a
 
 UsernameKolibri = dados["kolibri"]["username"]
 PasswordKolibri = dados["kolibri"]["password"]
-UsernameGoogle = dados["google"]["username"]
-PasswordGoogle = dados["google"]["password"]
+
 
 with sync_playwright() as p:
     navegador = p.chromium.launch(headless=False, downloads_path= os.getcwd()) #Colocar true depois
