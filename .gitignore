@@ -148,3 +148,5 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 credentials
+config.json
+config.json
