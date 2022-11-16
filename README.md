@@ -23,9 +23,9 @@ pip install pytest-playwright
 playwright install
 ```
 
-- é necessário instalar algumas dependências do Visual Studio para que o playwright rode, se precisar ele vai pedir no console.  necessita de instalar a ferramenta para programar em C++, deu um total de 1~GB para instalar
+- é necessário instalar algumas dependências do Visual Studio para que o playwright rode, se precisar ele vai pedir no console.  necessita de instalar a ferramenta desenvolvimento para desktop com C++, deu um total de 1~GB para instalar
 
-![Untitled](https://imgur.com/a/PZT6qeC)
+
 
 - Criar um arquivo config.json e inserir dados referente a username e password do Kolibri
 
