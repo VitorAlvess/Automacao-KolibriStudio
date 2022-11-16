@@ -1,22 +1,23 @@
-# Automacao-KolibriStudio
+# Configurações para automação do Kolibri Studio
 
-NECESSARIO:
-config.JSON
-{
-    "kolibri":{
-        "username": "username",
-        "password": "password"
-    },
-    "google":{
-        "username": "username",
-        "password": "password"
-    }
-}
-credentials.json
-credenciais deve ser baixado pelo google.console
-console -> APIs e serviços -> Credenciais
+- Precisa do python instalado no computador/vm
+- Instalar a biblioteca playwright
 
-token.json
-Gerado pelo google automaticamente
+```jsx
+pip install pytest-playwright
+```
 
-https://sugared-system-976.notion.site/Configura-es-para-automa-o-do-kolibri-studio-35145aa42d95442a938b046ae7b54818
+- Instalar os browser que ela pede
+
+```jsx
+playwright install
+```
+
+- Talvez seja necessário instalar algumas dependências do Visual Studio para que o playwright rode, se precisar ele vai pedir no console. No caso do PC domestico apareceu que necessita de instalar a ferramenta para programar em C++, deu um total de 6GB para instalar
+- Precisa criar credenciais no Google console ou reutilizar as que já existem.
+- Baixar as credenciais em JSON e passar para o código
+- Instalar a biblioteca da API
+
+```jsx
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+```

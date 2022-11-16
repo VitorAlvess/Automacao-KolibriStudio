@@ -4,6 +4,7 @@ config.json
 *.json
 *.csv
 
+dados.csv
 teste.py
 testecsv.py
 
