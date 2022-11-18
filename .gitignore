@@ -4,7 +4,7 @@ config.json
 credentials.json
 *.json
 *.csv
-
+/env
 dados.csv
 teste.py
 testecsv.py
