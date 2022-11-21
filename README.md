@@ -50,4 +50,4 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 Console -> APIs e serviços -> Credenciais
 ```
 
-- Baixar as credenciais em JSON e inserir na pasta do projeto
+- Baixar as credenciais em JSON e inserir na pasta do projeto com o nome de token.json
